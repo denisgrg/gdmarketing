@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="abouten.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="content">
+      <div class="logo">
+        <a href="homee.html">GD Marketing</a>
+      </div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="homeen.html">Home</a></li>
+        <li><a href="abouten.html">About</a></li>
+        <li><a href="priceen.html">Prices</a></li>
+        <li><a href="conatcten.html">Contact</a></li>
+          <li><a href="homero.html"><q>EN</q>/RO</a></li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+  <div class="banner"></div>
+    <div class="about">
+    <div class="content">
+      <div class="title"></div>
+      <h2><dd>About our Services</dd></h2>
+        <p><dd>Social-Media Marketing</dd><dd>-Website Building&Designing</dd><dd>-Graphic Designs</dd></p>
+        <div class="igfb">Facebook&Instagram Ads</div>
+            <div class="text"><p><dd>This Service can help you to grow your Business by using shout-outing through Social-Media Platforms as Facebook&Instagram.</dd>
+                <dd>Depends on your Business what kind of Ads we're going to use,but no matter what Business you own,</dd><dd>we will try our best to shout-out it and help you grow it as much as we can.</dd></p></div>
+        
+        <div class="ggl">Google Ads</div>
+            <div class="text"><p><dd>This Service can help you by boosting your website on Google,mostly on Google Search</dd><dd>If you own a online store,your products will be showen on the first line-paragraph to the people who search a product on Google.</dd><dd> Also if you own(e.g. Real Estate Company)and someone search for Real Estate Company, your web-site will be showed on the firsts paragraphs on Google Search.</dd></p></div>
+        
+        <div class="wbst">Website Building&Designing</div>
+           <div> <p><dd>This Service offers you the building&designing of a full website or blogpage</dd><dd>Also,the customer can choose the design and the way his website will look like.</dd><dd>The websites created by us,contains Responsive Design(RD) that makes the website to be adaptive at any device.</dd></p></div>
+        
+        <div class="blg">Banner&Logo Design</div>
+        <div class="text"><p><dd>This Service can offer the Design of a logo or banner</dd><dd>These two things are very important for your business and can define what your business is able to do or to offer for your clients</dd><dd>And, of course, the design of it, is choosed by the customer.</dd></p></div>
+        <div class="flr">Flyers,Bussines Cards&Others</div>
+            <div class="text"> <p><dd>We can offer flyers,bussines card or other things like it and the design is linked with the logo design.</dd></p></div>
+        </div>
+    </div>
+
+  <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = ()=>{
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+    </body>
+</html>

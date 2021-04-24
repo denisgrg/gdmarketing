@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="homero.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="content">
+      <div class="logo">
+        <a href="homero.html">GD Marketing</a>
+      </div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="homero.html">Acasa</a></li>
+        <li><a href="aboutro.html">Despre</a></li>
+          <li><a href="pricero.html">Preturi</a></li>
+        <li><a href="contactro.html">Contact</a></li>
+          <li><a href="homeen.html"><q>RO</q>/EN</a></li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+  <div class="banner"></div>
+  <div class="about">
+    <div class="content">
+      <div class="title"></div>
+    <h2><dl>5 Motive sa ne alegi!</dl></h2>
+        <p><dd>-Ne oferim serviciile noastre foarte repede;</dd><dd>-Suntem înțelegători și răbdători cu clienții noștri;</dd><dd>-Vă putem crește afacerea și multe altele;</dd><dd>-Putem transfera afacerea dvs. online foarte repede;</dd><dd>-Putem oferi servicii de calitate și de lungă durată;</dd></p>
+        <h2>-Social-Media Marketing</h2>
+        <dd> Acest serviciu vă promovează afacerea prin publicitate online pe platforme</dd><dd> sociale precum Facebook, Instagram și Google. </dd>
+        <dd> Avem, de asemenea, pachete pentru toate tipurile de reclame </dd>
+          <dd> Folosind publicitatea online, vă puteți dezvolta afacerea </dd>
+       <h2> -Construirea și proiectarea site-ului web </h2>
+         <dd> Acest serviciu vă poate oferi construirea și proiectarea unui site web. </dd>
+        <dd> Construirea site-ului web constă în alegerea unui design de </dd><dd>către client, site-ul web poate avea orice dimensiune,</dd><dd> cum ar fi site-ul mic, site-ul web mediu, site-ul web mare sau o pagină de blog. </dd>
+        <h2> -Graphic Design</h2>
+          <dd> Acest serviciu vă poate oferi proiectarea de bannere, cărți de vizită, afișe, pliante, bannere pentru social media; </dd>
+          <dd> Putem oferi servicii pentru realizarea de logo-uri pentru orice afacere; </dd>
+          <dd> Le putem face de orice dimensiune, chiar dacă este vorba de cm, inci sau pixeli;</dd>
+    </div>
+  </div>
+
+  <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = ()=>{
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+    </body>
+</html>

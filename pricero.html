@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pricero.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="content">
+      <div class="logo">
+        <a href="homero.html">GD Marketing</a>
+      </div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="homero.html">Acasa</a></li>
+        <li><a href="aboutro.html">Despre</a></li>
+          <li><a href="pricero.html">Preturi</a></li>
+        <li><a href="contactro.html">Contact</a></li>
+          <li><a href="homeen.html"><q>RO</q>/EN</a></li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+  <div class="banner"></div>
+    <div class="about">
+    <div class="content">
+      <div class="title"></div>
+      <h2>Prices of our Services</h2>
+        <div class="smm"><h3>-Social-Media Marketing</h3>
+           <p>•Reclame Facebook: 980 Lei/luna</p>
+            <p>•Reclame Facebook&Instagram: 1365 Lei/luna</p>
+            <p>•Reclame Google: 880 Lei/luna</p>
+        </div>
+                <div class="wb"><h3>-Construire Website</h3>
+                    <p>•Pagina De Blog+Responsive Design: 415 Lei</p>
+           <p>•Construire și proiectare de site-uri web: 640 Lei</p>
+           <p>•Construire și proiectare de site-uri web+Responsive Design: 860 Lei</p>
+        </div>
+                <div class="gd"><h3>-Graphic Designs</h3>
+                    <p>•Orice Model de Banner: 70-145 Lei</p>
+                    <p>•Proiectare Logo: 70-120 Lei</p>
+                    <p>•Carti de Vizita,Afise si Altele: 45-120 Lei</p>
+        </div>
+        <div class="gd"><h3>-Pachete Promotionale</h3>
+            <p><dd>•Reclame Facebook+Instagram+Google: 2210 Lei/luna</dd></p>
+            <p><dd>•Construire și proiectare de site-uri web+R.D.,Banner&Logo: 1030 Lei</dd></p>
+            <p><dd>•Banner,Logo&Carte de Vizita: 245 Lei</dd></p>
+        </div>
+      
+        </div>
+    </div>
+
+  <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = ()=>{
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+    </body>
+</html>

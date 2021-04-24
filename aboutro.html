@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="aboutro.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="content">
+      <div class="logo">
+        <a href="homero.html">GD Marketing</a>
+      </div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+      </div>
+        <li><a href="homero.html">Acasa</a></li>
+        <li><a href="aboutro.html">Despre</a></li>
+          <li><a href="pricero.html">Preturi</a></li>
+        <li><a href="contactro.html">Contact</a></li>
+          <li><a href="homeen.html"><q>RO</q>/EN</a></li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+  <div class="banner"></div>
+    <div class="about">
+    <div class="content">
+      <div class="title"></div>
+      <h2> <dd> Despre serviciile noastre </dd> </h2>
+         <p> <dd> -Social-Media Marketing </dd> <dd> -Construirea și proiectarea site-ului web </dd> <dd> -Graphic Design </dd> </p>
+         <div class = "igfb"> Reclame pe Facebook și Instagram </div>
+             <div class = "text"> <p> <dd> Acest serviciu vă poate ajuta să vă dezvoltați afacerea utilizând promovarea prin intermediul platformelor de social-media precum Facebook și Instagram. </dd>
+                 <dd> Depinde de afacerea dvs. ce fel de anunțuri vom folosi, dar indiferent de afacerea pe care o dețineți, </dd> <dd> vom încerca tot posibilul să o promovam și să vă ajutăm sa o desvoltati cat de mult putem. </dd> </p> </div>
+        
+        <div class = "ggl">Reclame Google</div>
+             <div class = "text"> <p> <dd> Acest serviciu vă poate ajuta prin stimularea site-ului dvs. pe Google, în principal pe Căutarea Google </dd> <dd> Dacă dețineți un magazin online, produsele dvs. vor fi afișate pe primul paragraf pentru persoanele care caută un produs asemanator sau ca al dumneavoastra pe Google. </dd> <dd> De asemenea, dacă dețineți (de exemplu, o companie imobiliară) și cineva caută o companie imobiliară, site-ul dvs. va fi afișate în primele paragrafe de pe Căutare Google. </dd> </p> 
+        
+        <div class = "wbst"> Construire și proiectare site-uri web </div>
+             <div> <p> <dd> Acest serviciu vă oferă construirea și proiectarea unui site web complet sau a unei pagini de blog </dd> <dd> De asemenea, clientul poate alege designul și modul în care va arăta site-ul său web. </dd> <dd> Site-urile web create de noi conțin Responsive Design (RD) care face ca site-ul web să fie adaptabil la orice dispozitiv. </dd> </p> </div>
+        
+       <div class = "blg"> Design de bannere și Logo </div>
+          <div class = "text"> <p> <dd> Acest serviciu poate oferi proiectarea unui logo sau banner </dd> <dd> Aceste două lucruri sunt foarte importante pentru afacerea dvs. și pot defini ceea ce sunteti capabil sa faceți sau sa oferiți clienților dvs. </dd> <dd> Și, desigur, designul acestuia este ales de client. </dd> </p> </div>
+          <div class = "flr"> Fluturași, cărți de vizita și altele </div>
+              <div class = "text"> <p> <dd> Putem oferi fluturași, cărți de vizita sau alte lucruri de genul acesta, iar designul este legat de designul logo-ului. </dd> </p> </ div>
+        </div>
+    </div>
+
+  <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = ()=>{
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+    </body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contacten.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="content">
+      <div class="logo">
+        <a href="homee.html">GD Marketing</a>
+      </div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="homeen.html">Home</a></li>
+        <li><a href="abouten.html">About</a></li>
+        <li><a href="priceen.html">Prices</a></li>
+        <li><a href="conatcten.html">Contact</a></li>
+          <li><a href="homero.html"><q>EN</q>/RO</a></li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+  <div class="banner"></div>
+    <div class="about">
+    <div class="content">
+      <div class="title"></div>
+      <h2>Contact Us!</h2>
+        <div class="row">
+        </div>
+        <div class="ph"><a href="tel:+40754395153"><i class="fas fa-phone-square-alt"></i>Call Us</a></div>
+        <div class="fb"><dd><a href="https://www.facebook.com/GD-Marketing-105359815026689/"><i class="fab fa-facebook-square"></i>Facebook</a></dd></div>
+        <div class="ig"><dd><a href="https://www.instagram.com/_gd.marketing_/"><i class="fab fa-instagram-square"></i>Instagram</a></dd></div>
+        <div class="wa"><dd><a href="https://wa.me/message/J7I2Z63CVT6YJ1"><i class="fab fa-whatsapp-square"></i>What's App</a></dd></div>
+        <div class="gml"><dd><a href="#"><i class="fas fa-envelope"></i>gd.marketing21@gmail.com</a></dd></div>
+        </div>
+  </div>
+
+  <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = ()=>{
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+    </body>
+</html>

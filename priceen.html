@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="priceen.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="content">
+      <div class="logo">
+        <a href="homee.html">GD Marketing</a>
+      </div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="homeen.html">Home</a></li>
+        <li><a href="abouten.html">About</a></li>
+        <li><a href="priceen.html">Prices</a></li>
+        <li><a href="conatcten.html">Contact</a></li>
+          <li><a href="homero.html"><q>EN</q>/RO</a></li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+  <div class="banner"></div>
+    <div class="about">
+    <div class="content">
+      <div class="title"></div>
+      <h2>Prices of our Services</h2>
+        <div class="smm"><h3>-Social-Media Marketing</h3>
+           <p>•Facebook Ads: 200€/month</p>
+            <p>•Facebook&Instagram Ads: 280€/month</p>
+            <p>•Google Ads: 180€/month</p>
+        </div>
+                <div class="wb"><h3>-Website Building</h3>
+                    <p>•Blog Page+Responsive Design: 85€</p>
+           <p>•Full Website Building&Design: 130€</p>
+           <p>•Full Website Building&Design+Responsive Design: 175€</p>
+        </div>
+                <div class="gd"><h3>-Graphic Designs</h3>
+                    <p>•Any Banner Design: 15-30€</p>
+                    <p>•Logo Design: 15-25€</p>
+                    <p>•Business cards,Posters or other Designs: 10-25€</p>
+        </div>
+        <div class="gd"><h3>-Promotional packages</h3>
+            <p><dd>•Facebook+Instagram+Google Ads: 450€/month</dd></p>
+            <p><dd>•Full Website Building&Design+R.D.,Banner&Logo: 210€</dd></p>
+            <p><dd>•Banner,Logo&Business Card: 50€</dd></p>
+        </div>
+      
+        </div>
+    </div>
+
+  <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = ()=>{
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+    </body>
+</html>

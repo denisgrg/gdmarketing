@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="homeen.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="content">
+      <div class="logo">
+        <a href="homee.html">GD Marketing</a>
+      </div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="#">Home</a></li>
+        <li><a href="abouten.html">About</a></li>
+          <li><a href="priceen.html">Prices</a></li>
+        <li><a href="conatcten.html">Contact</a></li>
+          <li><a href="homero.html"><q>EN</q>/RO</a></li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+  <div class="banner"></div>
+  <div class="about">
+    <div class="content">
+      <div class="title"></div>
+     <h2><dd>5 Reasons to choose us!</dd></h2>
+        <p><dd>-We deliver our services very quick;</dd><dd>-We are understanding and patient with our clients;</dd><dd>-We can grow your business and more;</dd><dd>-We can transfer your business online very quickly;</dd><dd>-We can offer quality and long lasting services;</dd></p>
+        <h2>-Social-Media Marketing</h2>
+        <dd>This service deals with the promotion of your business through online advertisements on Social-Media platforms such as Facebook, Instagram and Google.</dd>
+        <dd>Also we have packages for all the types of the adds</dd>
+        <dd>Using online ads you can grow up your business</dd>
+        <h2>-Website Building&Designing</h2>
+        <dd>This service can offer you the building and design of a website.</dd>
+        <dd>The building of the website consists in the choice of a design by the customer, the website can have any size such as small website, medium webiste, large website or a blog page.</dd>
+        <h2>-Graphics Designs</h2>
+        <dd>This service can offer you the design of banners, business cards, posters, flyers, banners for social media;</dd>
+        <dd>We can offer services for making logo's for any business;</dd>
+        <dd>We can make them of any size even it is about cm,inches or pixels;</dd>
+    </div>
+  </div>
+
+  <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = ()=>{
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+    </body>
+</html>
